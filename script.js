@@ -57,7 +57,7 @@ let person2 = {
     lastName : "Dhoni"
 }
 
-fullName.call(person2,"wicketkeeper") 
+fullName.call(person2,"wicketkeeper batsman") 
 
 ================================================================================================
 
