@@ -68,6 +68,8 @@ let  obj = {num:3}
 let sum = function(a,b,c){
     return this.num + a +b+c;  //3+1+2+3 = 9
 }
+sum.call(obj,...arr)
+
 console.log(
 sum.apply(obj,arr))
 
