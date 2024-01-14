@@ -12,10 +12,10 @@ Function.prototype.myCall = function (thisContext, ...args) {
   // 'this' will be the function(getDetails)
   thisContext[uniquekey] = this 
 
-  // thisContext.uniquekey will have the getDetails function and it is invoked
+  // thisContext.uniquekey will have the getDetails function and now getDetails funtion will be inside the student obj and it is invoked
   let result = thisContext[uniquekey](...args) 
-
-  return result // now getDetails funtion will be inside the student obj 
+  delete thisContext[uniquekey]; // Remove the unique property from the context which is not needed anymore
+  return result 
 /*
 student = {
   name :"Adam"
