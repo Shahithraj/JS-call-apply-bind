@@ -12,7 +12,7 @@ Function.prototype.myCall = function (thisContext, ...args) {
   // 'this' will be the function(getDetails)
   thisContext[uniquekey] = this 
 
-  // thisContext.uniquekey will have the getDetails function
+  // thisContext.uniquekey will have the getDetails function and it is invoked
   let result = thisContext[uniquekey](...args) 
 
   return result // now getDetails funtion will be inside the student obj 
